@@ -1,0 +1,69 @@
+[debug] [2020-08-25T10:07:18.232Z] ----------------------------------------------------------------------
+[debug] [2020-08-25T10:07:18.239Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\91766\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-08-25T10:07:18.239Z] CLI Version:   8.6.0
+[debug] [2020-08-25T10:07:18.239Z] Platform:      win32
+[debug] [2020-08-25T10:07:18.239Z] Node Version:  v12.16.2
+[debug] [2020-08-25T10:07:18.304Z] Time:          Tue Aug 25 2020 15:37:18 GMT+0530 (India Standard Time)
+[debug] [2020-08-25T10:07:18.304Z] ----------------------------------------------------------------------
+[debug] [2020-08-25T10:07:18.304Z] 
+[debug] [2020-08-25T10:07:18.340Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-25T10:07:18.340Z] > authorizing via signed-in user
+[debug] [2020-08-25T10:07:18.340Z] [iam] checking project clone-4889a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-08-25T10:07:18.348Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-4889a:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-08-25T10:07:21.522Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 25 Aug 2020 10:07:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1382","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-25T10:07:21.531Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clone-4889a  
+ 
+[debug] [2020-08-25T10:07:22.200Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 25 Aug 2020 10:07:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'clone-4889a'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-08-25T10:07:22.230Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-4889a/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-08-25T10:07:25.187Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 25 Aug 2020 10:07:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[clone-4889a]: beginning deploy... 
+[info] i  hosting[clone-4889a]: found 18 files in build 
+[debug] [2020-08-25T10:07:26.307Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2020-08-25T10:07:26.307Z] [hosting][hash queue][FINAL] {"max":1061,"min":12,"avg":84.94444444444444,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":1081}
+[debug] [2020-08-25T10:07:26.307Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-4889a/versions/bc1130b793a20fc9:populateFiles  
+ <request body omitted>
+[debug] [2020-08-25T10:07:28.264Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 25 Aug 2020 10:07:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-25T10:07:28.272Z] [hosting][populate queue][FINAL] {"max":1961,"min":1961,"avg":1961,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1969}
+[debug] [2020-08-25T10:07:28.272Z] [hosting] uploads queued: 6
+[debug] [2020-08-25T10:07:32.150Z] [hosting][upload queue][FINAL] {"max":3886,"min":2658,"avg":2866.6666666666665,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":3886}
+[info] +  hosting[clone-4889a]: file upload complete 
+[debug] [2020-08-25T10:07:32.155Z] [hosting] deploy completed after 6968ms
+[debug] [2020-08-25T10:07:32.571Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "clone-4889a"
+    },
+    "site": "clone-4889a",
+    "version": "sites/clone-4889a/versions/bc1130b793a20fc9"
+  }
+]
+[info] i  hosting[clone-4889a]: finalizing version... 
+[debug] [2020-08-25T10:07:32.576Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/clone-4889a/versions/bc1130b793a20fc9?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-08-25T10:07:59.861Z] Error: socket hang up
+    at connResetException (internal/errors.js:608:14)
+    at TLSSocket.socketOnEnd (_http_client.js:460:23)
+    at TLSSocket.emit (events.js:322:22)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Server Error. socket hang up
